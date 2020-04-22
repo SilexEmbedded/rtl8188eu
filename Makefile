@@ -146,7 +146,9 @@ obj-$(CONFIG_RTL8188EU) := 8188eu.o
 
 endif
 
-all: test modules
+# Remove annoying test that breaks OpenWRT build
+#all: test modules
+all: modules
 
 test:
 	@if [ !  -e  ./.git ] ; then echo $(MSG); exit 1; fi;
