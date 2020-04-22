@@ -148,7 +148,7 @@ else
 
 export CONFIG_RTL8188EU = m
 
-all: test modules
+all: modules
 
 test:
 	@if [ !  -e  ./.git ] ; then echo $(MSG); exit 1; fi;
